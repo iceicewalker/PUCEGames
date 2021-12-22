@@ -1,0 +1,68 @@
+<html>
+<head>
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+</head>
+<body onload="inicializa();">
+  <title>PUCECOVID</title>
+  <header class="header-area header-sticky">
+        <div class="container">
+        	<h1 id="fuenteptit"><strong> </strong></h1>
+          <div id="fuente-google">
+            😷🦠Covid Scape🦠😷
+          </div>
+          <button type="button" class="btn btn-green" onclick="googleLogin()" >LOGIN GOOGLE</button>
+        </div>
+
+
+
+    </header>
+  <canvas id="canvas" width="1300" padding="200" height="600" style="border:3px solid #0055FF;"></canvas>
+  <div id="main=container">
+    <a id="salto" href"#" class="btn btn-green2">JUMP</a>
+  </div>
+  <div class="keys">
+      <div id="w"> </div>
+  </div>
+  <div id="box">
+      <div class="title">TOP 10 Mejores Puntuaciones</div>
+      <div id="leaderboard">
+          Cargando...
+      </div>
+  </div>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyCuekCsXoHVe95DAyM0__SORayoPBRAM0A",
+      authDomain: "proyectog-4382e.firebaseapp.com",
+      projectId: "proyectog-4382e",
+      storageBucket: "proyectog-4382e.appspot.com",
+      messagingSenderId: "100087965169",
+      appId: "1:100087965169:web:55958799b8b4145c9a9050",
+      measurementId: "G-LYWF7Z4LK4"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+  </script>
+  <script src="juego.js"></script>
+</body>
+</html>
